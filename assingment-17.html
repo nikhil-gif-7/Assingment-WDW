@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+    <body>
+        <form method="post" action="submit.php">
+            <p><input type="text" name="name" placeholder="Full name" required></p>
+            <p><input type="email" name="email" placeholder="you@college.edu" required></p>
+            <p><input type="text" name="mobile" placeholder="10-digits" required
+            pattern="[0-9]{10}" title="Enter exactly 10 digits"></p>
+            <p><input type="password" name="password" placeholder="Min 6 characters" required
+                minlength="6"></p>
+                <p><input type="number" name="age" placeholder="Age" required
+                    min="17" max="30"></p>
+                    <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
